@@ -1,9 +1,9 @@
-# Translations Coordination
+# Translation Coordination
 
 Coordination of the translation of Flask documentation.
 
 
-## Request New Translation
+## Request a New Translation
 
 [Submit an issue](https://github.com/flaskcwg/translation-coordination/issues/new?assignees=&labels=&template=new-translation.md) and follow the instruction in the issue template.
 
