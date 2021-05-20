@@ -18,10 +18,10 @@ To become a translation coordinator and create a translation for your language, 
 - [ ] Generate a repository from [flaskcwg/translation-template](https://github.com/flaskcwg/translation-template)
 - [ ] Naming your repository as `flask-docs-<lang code>`, for example, `flask-docs-es`
 - [ ] Setup readthedocs to use `flask-es` as subdommain, and set default branch to "2.0.x".
-- [ ] Translate the README and the pull request template, update the title, clone URL, and folder name in the README. You may also want to update the `flaskcwg` in upstream URL to your username if you want to accepts contribution before switching your repository into the flaskcwg organization.
+- [ ] Translate the README and the pull request template, update the title, clone URL, and folder name in the README. You may also want to update the `flaskcwg` in the upstream URL to your username if you want to accept contribution before switching your repository into the flaskcwg organization.
 - [ ] Translate the "Tutorial" part of the docs.
 
-When you finished the tasks above, leave a comment to ping us, we will switch your repo into flaskcwg, then you can work on other chapters or call for other people to contribute.
+When you finished the tasks above, leave a comment that includes your repository URL to ping us, we will switch your repository into the flaskcwg organization, then you can work on other chapters or call for other people to contribute.
 
 After that:
 
