@@ -23,6 +23,7 @@ Initial tasks:
 - [ ] Name your repository as `flask-docs-<lang code>`, for example, `flask-docs-es`.
 - [ ] Setup ReadTheDocs to connect your repository, use `flask-<lang code>` as the subdomain, and set the default branch to "2.0.x".
 - [ ] Translate the README and the pull request template, update the title, clone URL, and folder name in the README. You may also want to update the `flaskcwg` in the upstream URL to your username if you want to accept contribution before switching your repository into the flaskcwg organization.
+- [ ] Translate the `docs/index.rst` and `docs/quickstart.rst`.
 - [ ] Translate the "Tutorial" part of the docs.
 
 <!--
