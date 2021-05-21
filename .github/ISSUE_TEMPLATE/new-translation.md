@@ -22,7 +22,7 @@ Initial tasks:
 - [ ] Generate a repository from [flaskcwg/translation-template](https://github.com/flaskcwg/translation-template), include all branches.
 - [ ] Name your repository as `flask-docs-<lang code>`, for example, `flask-docs-es`.
 - [ ] Setup ReadTheDocs to connect your repository, use `flask-<lang code>` as the subdomain, and set the default branch to "2.0.x".
-- [ ] Translate the README and the pull request template, update the title, clone URL, upstram URL, and folder name in the README. You can update README to add more format or translate tips for your language.
+- [ ] Translate the README and the pull request template, update the title, clone URL, upstream URL, and folder name in the README. You can update README to add more format or translate tips for your language.
 - [ ] Translate the `docs/index.rst` file.
 - [ ] Translate the `docs/installation.rst` file.
 - [ ] Translate the `docs/quickstart.rst` file.
