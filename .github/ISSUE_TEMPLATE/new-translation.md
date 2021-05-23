@@ -23,7 +23,8 @@ Initial tasks:
 - [ ] Generate a repository from [flaskcwg/translation-template](https://github.com/flaskcwg/translation-template), include all branches.
 - [ ] Name your repository as `flask-docs-<lang code>`, for example, `flask-docs-es`.
 - [ ] Setup ReadtheDocs to connect your repository, use `flask-<lang code>` as the subdomain, set the default version to the `main` branch and enable single version.
-- [ ] Translate the README and the pull request template, update the title, clone URL, upstream URL, and folder name in the README. You can update README to add more format or translate tips for your language.
+- [ ] Translate the README and the pull request template (optional).
+- [ ] Update the title, clone URL, upstream URL, and folder name in the README. You can update the README to add more format or translate tips for your language.
 - [ ] Translate the `docs/index.rst` file.
 - [ ] Translate the `docs/foreword.rst` file.
 - [ ] Translate the `docs/advanced-foreword.rst` file.
@@ -31,6 +32,12 @@ Initial tasks:
 - [ ] Translate the `docs/quickstart.rst` file.
 - [ ] Translate the "Tutorial" part of the docs.
 - [ ] Switch the repository into the flaskcwg organization.
+
+<!--
+We recommend you to finish the translation of the chapters above to keep the quality
+and read experience of the essential part of the documentation. These chapters are marked
+as reserved in the translation to-do list.
+-->
 
 <!--
 When you finished the tasks above, leave a comment that includes your repository URL to ping us, we will switch your repository into the flaskcwg organization, then you can work on other chapters or call for other people to contribute.
