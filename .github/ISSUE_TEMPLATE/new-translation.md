@@ -5,7 +5,7 @@ labels: language
 ---
 
 <!--
-Make sure there isn't an exist issue for the language you request to add.
+Make sure there isn't an existing issue with the language you request to add.
 -->
 
 Language:
@@ -34,9 +34,9 @@ Initial tasks:
 - [ ] Switch the repository into the flaskcwg organization.
 
 <!--
-We recommend you to finish the translation of the chapters above to keep the quality
-and read experience of the essential part of the documentation. These chapters are marked
-as reserved in the translation to-do list.
+We recommend you finish the translation of the chapters above by yourself to keep the
+quality and reading experience of the essential part of the documentation. These
+chapters are marked as reserved in the translation to-do list.
 -->
 
 <!--
@@ -55,5 +55,7 @@ Tasks after the repository is switched into flaskcwg:
 Tasks when the whole documentation is translated:
 
 - [ ] Create a 2.0.x branch, set it as default version on ReadtheDocs.
-- [ ] Pick all the issues labeled with `feature`, update them into main branch.
+- [ ] Fix all the issues labeled with `fix` in this repository, update them into the 2.0.x branch.
+- [ ] Fix all the issues labeled with `feature` in this repository, update them into the main branch.
+- [ ] Rewrite the contributing guide in the README of the translation repository, encourage people to pick up the future docs update issues in this repository.
 - [ ] Switch the docs into http://flask.palletsprojects.com/.
