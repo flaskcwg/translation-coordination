@@ -25,6 +25,8 @@ Initial tasks:
 - [ ] Setup ReadtheDocs to connect your repository, use `flask-<lang code>` as the subdomain, set the default version to the `main` branch and enable single version.
 - [ ] Translate the README and the pull request template, update the title, clone URL, upstream URL, and folder name in the README. You can update README to add more format or translate tips for your language.
 - [ ] Translate the `docs/index.rst` file.
+- [ ] Translate the `docs/foreword.rst` file.
+- [ ] Translate the `docs/advanced-foreword.rst` file.
 - [ ] Translate the `docs/installation.rst` file.
 - [ ] Translate the `docs/quickstart.rst` file.
 - [ ] Translate the "Tutorial" part of the docs.
