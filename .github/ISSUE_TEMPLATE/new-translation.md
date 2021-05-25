@@ -42,10 +42,10 @@ $ make gettext  # use ".\make.bat gettext" on Windows
 $ sphinx-intl update -p _build/gettext -l <lang code>
 ```
 - [ ] Replace the `<LANG>` in the README and the `language` config in `docs/conf.py` with your language code. Update the `.po` file examples.
-- [ ] Setup ReadtheDocs to connect your repository, use `flask-<lang code>` as the subdomain, set the default version to the `main` branch and enable single version.
+- [ ] Setup ReadtheDocs to connect your repository, use `flask-<lang code>` as the subdomain, set the default version to the `main` branch, and enable the "single version" mode.
 - [ ] Translate the README and the pull request template (optional).
 - [ ] Update the title, clone URL, upstream URL, and folder name in the README. You can update the README to add more format or translate tips for your language.
-- [ ] You can choose to use [Transifex](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html#using-transifex-service-for-team-translation) or other translation paltform. In that case, you will need to rewrite the "Contributing Guide" in the README.
+- [ ] You can choose to use [Transifex](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html#using-transifex-service-for-team-translation) or other translation platforms. In that case, you will need to rewrite the "Contributing Guide" in the README.
 - [ ] Update the `Language-Team` value in all `.po` files.
 - [ ] Translate the `docs/index` file (you can make a localized logo for the index page).
 - [ ] Translate the `docs/foreword` file.
