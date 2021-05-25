@@ -11,25 +11,47 @@ Make sure there isn't an existing issue with the language you request to add.
 Language:
 
 <!--
-Replace this comment with a short introduction of yourself and your former experience with Flask or translation.
+Replace this comment with a short introduction of yourself and your former experience with Flask and translation (English -> your language).
 -->
 
 <!--
 To become a translation coordinator and create a translation for your language, please complete the following initial tasks in 30 days:
 -->
 
-Initial tasks:
+## Initial tasks
 
 - [ ] Generate a repository from [flaskcwg/translation-template](https://github.com/flaskcwg/translation-template), include all branches.
 - [ ] Name your repository as `flask-docs-<lang code>`, for example, `flask-docs-es`.
+- [ ] Add pallets/flask as upstream remote, then update:
+```
+$ git remote add upstream https://github.com/pallets/flask
+$ git fetch upstream
+$ git merge upstream/main
+```
+- [ ] Setup the virtual environment, install the requirements:
+```
+$ python -m pip install --upgrade pip setuptools
+$ pip install -r requirements/dev.txt
+$ pip install -e .
+$ pre-commit install
+```
+- [ ] Generate the `.pot` and `.po` files (replace `<lang code>` with your language code):
+```
+$ cd docs
+$ make gettext  # use ".\make.bat gettext" on Windows
+$ sphinx-intl update -p _build/gettext -l <lang code>
+```
+- [ ] Replace the `<LANG>` in the README and the `language` config in `docs/conf.py` with your language code. Update the `.po` file examples.
 - [ ] Setup ReadtheDocs to connect your repository, use `flask-<lang code>` as the subdomain, set the default version to the `main` branch and enable single version.
 - [ ] Translate the README and the pull request template (optional).
 - [ ] Update the title, clone URL, upstream URL, and folder name in the README. You can update the README to add more format or translate tips for your language.
-- [ ] Translate the `docs/index.rst` file.
-- [ ] Translate the `docs/foreword.rst` file.
-- [ ] Translate the `docs/advanced-foreword.rst` file.
-- [ ] Translate the `docs/installation.rst` file.
-- [ ] Translate the `docs/quickstart.rst` file.
+- [ ] You can choose to use [Transifex](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html#using-transifex-service-for-team-translation) or other translation paltform. In that case, you will need to rewrite the "Contributing Guide" in the README.
+- [ ] Update the `Language-Team` value in all `.po` files.
+- [ ] Translate the `docs/index` file (you can make a localized logo for the index page).
+- [ ] Translate the `docs/foreword` file.
+- [ ] Translate the `docs/advanced-foreword` file.
+- [ ] Translate the `docs/installation` file.
+- [ ] Translate the `docs/quickstart` file.
 - [ ] Translate the "Tutorial" part of the docs.
 - [ ] Switch the repository into the flaskcwg organization.
 
@@ -45,17 +67,30 @@ When you finished the tasks above, leave a comment that includes your repository
 After that:
 -->
 
+## Public
+
 Tasks after the repository is switched into flaskcwg:
 
-- [ ] Add a new language entry to [this issue template](https://github.com/flaskcwg/translation-coordination/blob/main/README.md).
 - [ ] Add a new language entry to [the README](https://github.com/flaskcwg/translation-coordination/blob/main/README.md).
 - [ ] Add a new language entry to [translations page](https://github.com/flaskcwg/flaskcwg.github.io/blob/source/templates/translations.html).
 
 
+## Maintenance
+
 Tasks when the whole documentation is translated:
 
 - [ ] Create a 2.0.x branch, set it as default version on ReadtheDocs.
-- [ ] Fix all the issues labeled with `fix` in this repository, update them into the 2.0.x branch.
-- [ ] Fix all the issues labeled with `feature` in this repository, update them into the main branch.
 - [ ] Rewrite the contributing guide in the README of the translation repository, encourage people to pick up the future docs update issues in this repository.
 - [ ] Switch the docs into http://flask.palletsprojects.com/.
+
+You should sync documentation updates from Flask periodically:
+
+```
+$ git fetch upstream
+$ git merge upstram/main
+$ cd docs
+$ make gettext  # use ".\make.bat gettext" on Windows
+$ sphinx-intl update -p _build/gettext
+```
+
+Then update the translation for new changes.
