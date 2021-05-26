@@ -92,7 +92,7 @@ You should sync documentation updates from Flask periodically:
 
 ```
 $ git fetch upstream
-$ git merge upstram/main
+$ git merge upstram/2.0.x
 $ cd docs
 $ make gettext  # use ".\make.bat gettext" on Windows
 $ sphinx-intl update -p _build/gettext
