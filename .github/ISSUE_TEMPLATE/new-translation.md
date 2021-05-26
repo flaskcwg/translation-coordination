@@ -41,7 +41,9 @@ $ cd docs
 $ make gettext  # use ".\make.bat gettext" on Windows
 $ sphinx-intl update -p _build/gettext -l <lang code>
 ```
-- [ ] Replace the `<LANG>` in the README and the `language` config in `docs/conf.py` with your language code. Update the `.po` file examples.
+- [ ] Replace the `<LANG>` in the README, the `language` config, and the
+`html_search_language` config in `docs/conf.py` with your language code.
+Update the `.po` file examples.
 - [ ] Setup ReadtheDocs to connect your repository, use `flask-<lang code>` as the subdomain, set the default version to the `main` branch, and enable the "single version" mode.
 - [ ] Translate the README and the pull request template (optional).
 - [ ] Update the title, and all the `<UPDATE THIS>` palceholders in `README.md` and `docs/conf.py`. You can update the README to add more format or translate tips for your language.
