@@ -26,7 +26,7 @@ To become a translation coordinator and create a translation for your language, 
 ```
 $ git remote add upstream https://github.com/pallets/flask
 $ git fetch upstream
-$ git merge upstream/main
+$ git merge upstream/2.0.x
 ```
 - [ ] Setup the virtual environment, install the requirements:
 ```
@@ -92,7 +92,7 @@ You should sync documentation updates from Flask periodically:
 
 ```
 $ git fetch upstream
-$ git merge upstram/2.0.x
+$ git merge upstream/2.0.x
 $ cd docs
 $ make gettext  # use ".\make.bat gettext" on Windows
 $ sphinx-intl update -p _build/gettext
