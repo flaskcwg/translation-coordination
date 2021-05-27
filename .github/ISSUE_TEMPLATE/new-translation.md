@@ -19,16 +19,18 @@ To become a translation coordinator and create a translation for your language, 
 -->
 
 ## Initial tasks
-
-- [ ] Generate a repository from [flaskcwg/translation-template](https://github.com/flaskcwg/translation-template), include all branches.
-- [ ] Name your repository as `flask-docs-<lang code>`, for example, `flask-docs-es`.
-- [ ] Add pallets/flask as upstream remote, then update:
+- [ ] Create an empty repository on GitHub. Name the repository as `flask-docs-<lang code>`, for example, `flask-docs-es`.
+- [ ] Set up your repository based on the translation template repository:
 ```
-$ git remote add upstream https://github.com/pallets/flask
+$ git clone https://github.com/flaskcwg/translation-template.git flask-docs-<lang code>
+$ cd flask-docs-<lang code>
+$ git remote set-url origin <the-Git-URL-to-your-repository>
+$ git remote add upstream https://github.com/pallets/flask.git
 $ git fetch upstream
 $ git merge upstream/2.0.x
+$ git push -u origin main
 ```
-- [ ] Setup the virtual environment, install the requirements:
+- [ ] Create a virtual environment, then install the requirements:
 ```
 $ python -m pip install --upgrade pip setuptools
 $ pip install -r requirements/dev.txt
