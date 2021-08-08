@@ -58,7 +58,7 @@ Update the `.po` file examples.
 - [ ] Translate the `docs/installation` file.
 - [ ] Translate the `docs/quickstart` file.
 - [ ] Translate the "Tutorial" part of the docs.
-- [ ] Switch the repository into the flaskcwg organization.
+- [ ] Switch the repository into the flaskcwg organization. See [HERE](https://flaskcwg.github.io/faq/migrate-repo-to-flaskcwg-org/).
 
 <!--
 We recommend you finish the translation of the chapters above by yourself to keep the
