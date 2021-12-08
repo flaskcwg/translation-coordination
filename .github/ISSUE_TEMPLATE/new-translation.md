@@ -49,8 +49,8 @@ Update the `.po` file examples.
 - [ ] Setup ReadtheDocs to connect your repository, use `flask-<lang code>` as the subdomain, set the default version to the `main` branch, and enable the "single version" mode.
 - [ ] Translate the `README.md` and the pull request template (optional).
 - [ ] Update the title, and all the `<UPDATE THIS>` placeholders  in `README.md` and `docs/conf.py`. You can update the `README.md` to add more format or translate tips for your language.
-- [ ] You can choose to use [Transifex](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html#using-transifex-service-for-team-translation) or other translation platforms. In that case, you will need to rewrite the "Contributing Guide" in the `README.md`.
-- [ ] Update the `Language-Team` value in all `.po` files.
+- [ ] [Optional] You can choose to use [Transifex](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html#using-transifex-service-for-team-translation) or other translation platforms. In that case, you will need to rewrite the "Contributing Guide" in the `README.md`.
+- [ ] Update the `Language-Team` field value in all `.po` files with your language code and email.
 - [ ] Translate `html_title` and project links in the `docs/conf.py` file.
 - [ ] Translate the `docs/index` file (you can make a localized logo for the index page).
 - [ ] Translate the `docs/foreword` file.
