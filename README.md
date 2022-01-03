@@ -13,3 +13,4 @@ Coordination of the translation of Flask documentation.
 - Spanish: https://github.com/flaskcwg/flask-docs-es
 - Chinese: https://github.com/flaskcwg/flask-docs-zh
 - French: https://github.com/flaskcwg/flask-docs-fr
+- Persian(Farsi): https://github.com/flaskcwg/flask-docs-fa
