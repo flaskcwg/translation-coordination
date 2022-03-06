@@ -34,6 +34,7 @@ $ git push -u origin main
 ```
 $ python -m pip install --upgrade pip setuptools
 $ pip install -r requirements/dev.txt
+$ pip install sphinx-intl
 $ pip install -e .
 $ pre-commit install
 ```
