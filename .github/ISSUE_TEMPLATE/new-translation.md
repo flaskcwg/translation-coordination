@@ -27,7 +27,7 @@ $ cd flask-docs-<lang code>
 $ git remote set-url origin <the-Git-URL-to-your-repository>
 $ git remote add upstream https://github.com/pallets/flask.git
 $ git fetch upstream
-$ git merge upstream/2.0.x
+$ git merge upstream/2.1.x
 $ git push -u origin main
 ```
 - [ ] Create a virtual environment, then install the requirements:
@@ -85,7 +85,7 @@ Tasks after the repository is switched into flaskcwg:
 
 Tasks when the whole documentation is translated:
 
-- [ ] Create a 2.0.x branch, set it as default version on ReadtheDocs.
+- [ ] Create a 2.1.x branch, set it as default version on ReadtheDocs.
 - [ ] Rewrite the contributing guide in the `README.md` of the translation repository, encourage people to fetch upstream and update docs (see details below).
 - [ ] Rename the section "Translation To-do List" to "Translators". You can also add
 a "Reviewers" section.
@@ -95,7 +95,7 @@ You should sync documentation updates from Flask periodically:
 
 ```
 $ git fetch upstream
-$ git merge upstream/2.0.x
+$ git merge upstream/2.1.x
 $ cd docs
 $ make gettext  # use ".\make.bat gettext" on Windows
 $ sphinx-intl update -p _build/gettext
